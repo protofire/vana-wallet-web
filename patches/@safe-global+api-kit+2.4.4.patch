@@ -1,0 +1,14 @@
+diff --git a/node_modules/@safe-global/api-kit/dist/src/utils/config.js b/node_modules/@safe-global/api-kit/dist/src/utils/config.js
+index fcf1750..eaa3ff5 100644
+--- a/node_modules/@safe-global/api-kit/dist/src/utils/config.js
++++ b/node_modules/@safe-global/api-kit/dist/src/utils/config.js
+@@ -15,6 +15,7 @@ exports.TRANSACTION_SERVICE_URLS = {
+     '43114': 'https://safe-transaction-avalanche.safe.global',
+     '84532': 'https://safe-transaction-base-sepolia.safe.global',
+     '11155111': 'https://safe-transaction-sepolia.safe.global',
+-    '1313161554': 'https://safe-transaction-aurora.safe.global'
++    '1313161554': 'https://safe-transaction-aurora.safe.global',
++    '14800': 'https://transaction-testnet.safe.vana.org',
+ };
+ //# sourceMappingURL=config.js.map
+\ No newline at end of file
