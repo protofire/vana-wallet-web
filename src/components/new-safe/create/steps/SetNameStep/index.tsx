@@ -112,7 +112,10 @@ function SetNameStep({
             By continuing, you agree to our terms of use and privacy policy.
           </Typography>
 
-          {isWrongChain && <NetworkWarning />}
+          <Box sx={{ '&:not(:empty)': { mt: 3 } }}>
+            <NetworkWarning action="create a Safe Account" />
+          </Box>
+
           <NoWalletConnectedWarning />
         </Box>
         <Divider />
