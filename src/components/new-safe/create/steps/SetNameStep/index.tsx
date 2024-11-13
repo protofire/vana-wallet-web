@@ -19,6 +19,7 @@ import { type SafeVersion } from '@safe-global/safe-core-sdk-types'
 import { useCurrentChain } from '@/hooks/useChains'
 import { useEffect } from 'react'
 import { getLatestSafeVersion } from '@/utils/chains'
+import Link from 'next/link'
 
 type SetNameStepForm = {
   name: string
@@ -109,7 +110,11 @@ function SetNameStep({
             </Grid>
           </Grid>
           <Typography variant="body2" mt={2}>
-            By continuing, you agree to our terms of use and privacy policy.
+            By continuing, you agree to our{' '}
+            <Link href={AppRoutes.terms} passHref legacyBehavior>
+              terms of use
+            </Link>{' '}
+            .
           </Typography>
 
           <Box sx={{ '&:not(:empty)': { mt: 3 } }}>
