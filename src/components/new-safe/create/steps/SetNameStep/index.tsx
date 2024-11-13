@@ -20,6 +20,7 @@ import { useCurrentChain } from '@/hooks/useChains'
 import { useEffect } from 'react'
 import { getLatestSafeVersion } from '@/utils/chains'
 import Link from 'next/link'
+import MuiLink from '@mui/material/Link'
 
 type SetNameStepForm = {
   name: string
@@ -112,7 +113,7 @@ function SetNameStep({
           <Typography variant="body2" mt={2}>
             By continuing, you agree to our{' '}
             <Link href={AppRoutes.terms} passHref legacyBehavior>
-              terms of use
+              <MuiLink>terms of use</MuiLink>
             </Link>{' '}
             .
           </Typography>

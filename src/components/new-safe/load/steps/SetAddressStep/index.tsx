@@ -29,6 +29,7 @@ import { selectAddedSafes } from '@/store/addedSafesSlice'
 import { LOAD_SAFE_EVENTS, trackEvent } from '@/services/analytics'
 import { AppRoutes } from '@/config/routes'
 import Link from 'next/link'
+import MuiLink from '@mui/material/Link'
 
 enum Field {
   name = 'name',
@@ -143,7 +144,7 @@ const SetAddressStep = ({ data, onSubmit, onBack }: StepRenderProps<LoadSafeForm
           <Typography mt={4}>
             By continuing you consent to the{' '}
             <Link href={AppRoutes.terms} passHref legacyBehavior>
-              terms of use
+              <MuiLink>terms of use</MuiLink>
             </Link>{' '}
             .
           </Typography>
