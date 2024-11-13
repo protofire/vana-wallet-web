@@ -18,6 +18,7 @@ import { selectCookieBanner, openCookieBanner, closeCookieBanner } from '@/store
 import css from './styles.module.css'
 import { AppRoutes } from '@/config/routes'
 import Link from 'next/link'
+import MuiLink from '@mui/material/Link'
 
 const COOKIE_AND_TERM_WARNING: Record<CookieAndTermType, string> = {
   [CookieAndTermType.TERMS]: '',
@@ -86,13 +87,13 @@ export const CookieAndTermBanner = ({
         <Grid container alignItems="center">
           <Grid item xs>
             <Typography variant="body2" mb={2}>
-              By browsing this page, you accept our
+              By browsing this page, you accept our{' '}
               <Link href={AppRoutes.terms} passHref legacyBehavior>
-                Terms & Conditions
+                <MuiLink>Terms & Conditions</MuiLink>
               </Link>{' '}
               (last updated November 2024) and the use of necessary cookies.{' '}
               <Link href={AppRoutes.cookie} passHref legacyBehavior>
-                Cookie policy
+                <MuiLink>Cookie policy</MuiLink>
               </Link>{' '}
             </Typography>
 
