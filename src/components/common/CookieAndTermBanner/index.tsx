@@ -91,7 +91,7 @@ export const CookieAndTermBanner = ({
               <Link href={AppRoutes.terms} passHref legacyBehavior>
                 <MuiLink>Terms & Conditions</MuiLink>
               </Link>{' '}
-              (last updated November 2024) and the use of necessary cookies.{' '}
+              (last updated October 2024) and the use of necessary cookies.{' '}
               <Link href={AppRoutes.cookie} passHref legacyBehavior>
                 <MuiLink>Cookie policy</MuiLink>
               </Link>{' '}
