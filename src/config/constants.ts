@@ -94,7 +94,7 @@ export const RECOVERY_FEEDBACK_FORM =
   'https://noteforms.com/forms/safe-feedback-form-hk16ds?notionforms=1&utm_source=notionforms'
 
 // Social
-export const DISCORD_URL = 'https://discord.com/invite/Wv2vtBazMR'
+export const DISCORD_URL = 'https://discord.com/app/invite-with-guild-onboarding/withvana'
 export const TWITTER_URL = 'https://x.com/withvana'
 
 // Legal
