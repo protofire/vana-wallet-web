@@ -15,7 +15,7 @@ export const useDarkMode = (): boolean => {
     const isDark = settings.theme.darkMode ?? isSystemDarkMode()
 
     setIsDarkMode(isDark)
-    document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light')
+    document.documentElement.setAttribute('data-theme', 'dark')
   }, [settings.theme.darkMode])
 
   return isDarkMode

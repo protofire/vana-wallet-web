@@ -45,7 +45,8 @@
   width: auto;
   display: block;
   color: var(--color-logo-main);
-  height: 20px;
+  height: auto;
+  width: 120px;
 }
 
 .logo {
