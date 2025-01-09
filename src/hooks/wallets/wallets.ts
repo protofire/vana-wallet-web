@@ -31,7 +31,7 @@ const walletConnectV2 = (chain: ChainInfo) => {
       themeVariables: {
         '--wcm-z-index': '1302',
       },
-      themeMode: prefersDarkMode() ? 'dark' : 'light',
+      themeMode: prefersDarkMode() ? 'dark' : 'dark',
     },
     requiredChains: [parseInt(chain.chainId)],
     dappUrl: location.origin,
@@ -47,8 +47,8 @@ const WALLET_MODULES: Partial<{ [key in WALLET_KEYS]: (chain: ChainInfo) => Wall
   [WALLET_KEYS.KEYSTONE]: () => keystoneModule() as WalletInit,
   ...(!IS_PRODUCTION
     ? {
-        [WALLET_KEYS.PK]: (chain) => pkModule(chain.chainId, chain.rpcUri) as WalletInit,
-      }
+      [WALLET_KEYS.PK]: (chain) => pkModule(chain.chainId, chain.rpcUri) as WalletInit,
+    }
     : {}),
 }
 

@@ -131,7 +131,7 @@ const SwapWidget = ({ sell }: Params) => {
     },
     enabledTradeTypes: [TradeType.SWAP, TradeType.LIMIT, TradeType.ADVANCED],
     theme: {
-      baseTheme: darkMode ? 'dark' : 'light',
+      baseTheme: darkMode ? 'dark' : 'dark',
       primary: palette.primary.main,
       background: palette.background.main,
       paper: palette.background.paper,
@@ -258,7 +258,7 @@ const SwapWidget = ({ sell }: Params) => {
       ...params,
       chainId,
       theme: {
-        baseTheme: darkMode ? 'dark' : 'light',
+        baseTheme: darkMode ? 'dark' : 'dark',
         primary: palette.primary.main,
         background: palette.background.main,
         paper: palette.background.paper,
