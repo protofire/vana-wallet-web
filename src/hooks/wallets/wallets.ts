@@ -31,7 +31,7 @@ const walletConnectV2 = (chain: ChainInfo) => {
       themeVariables: {
         '--wcm-z-index': '1302',
       },
-      themeMode: prefersDarkMode() ? 'dark' : 'light',
+      themeMode: prefersDarkMode() ? 'dark' : 'dark',
     },
     requiredChains: [parseInt(chain.chainId)],
     dappUrl: location.origin,

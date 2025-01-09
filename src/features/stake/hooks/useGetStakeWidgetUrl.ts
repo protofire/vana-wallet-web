@@ -14,7 +14,7 @@ export const useGetStakeWidgetUrl = (asset?: string) => {
     url = WIDGET_TESTNET_URL
   }
   const params = new URLSearchParams()
-  params.append('theme', isDarkMode ? 'dark' : 'light')
+  params.append('theme', isDarkMode ? 'dark' : 'dark')
 
   if (asset) {
     params.append('asset', asset)

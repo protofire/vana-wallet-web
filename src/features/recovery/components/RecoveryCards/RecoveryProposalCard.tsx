@@ -42,7 +42,7 @@ export function _RecoveryProposalCard({ orientation = 'vertical', onClose, safe,
 
   const icon = (
     <img
-      src={`/images/common/propose-recovery-${isDarkMode ? 'dark' : 'light'}.svg`}
+      src={`/images/common/propose-recovery-${isDarkMode ? 'dark' : 'dark'}.svg`}
       alt="An arrow surrounding a circle containing a vault"
     />
   )

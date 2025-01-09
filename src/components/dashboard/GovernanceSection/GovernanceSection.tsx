@@ -47,7 +47,7 @@ const WidgetLoadErrorFallback = () => (
 const MiniAppFrame = ({ app, title }: { app: SafeAppData; title: string }) => {
   const chain = useCurrentChain()
   const isDarkMode = useDarkMode()
-  const theme = isDarkMode ? 'dark' : 'light'
+  const theme = isDarkMode ? 'dark' : 'dark'
   const { getAllowedFeaturesList } = useBrowserPermissions()
   const iframeRef = useRef<HTMLIFrameElement>(null)
 
