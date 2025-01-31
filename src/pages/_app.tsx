@@ -45,7 +45,7 @@ import WalletProvider from '@/components/common/WalletProvider'
 import CounterfactualHooks from '@/features/counterfactual/CounterfactualHooks'
 import PkModulePopup from '@/services/private-key-module/PkModulePopup'
 import GeoblockingProvider from '@/components/common/GeoblockingProvider'
-import OutreachPopup from '@/features/targetedOutreach/components/OutreachPopup'
+// import OutreachPopup from '@/features/targetedOutreach/components/OutreachPopup'
 
 export const GATEWAY_URL = IS_PRODUCTION || cgwDebugStorage.get() ? GATEWAY_URL_PRODUCTION : GATEWAY_URL_STAGING
 
@@ -130,7 +130,8 @@ const WebCoreApp = ({
 
           <CookieAndTermBanner />
 
-          <OutreachPopup />
+          {/* TODO: uncomment during the next roll out, since it will have own feature flag */}
+          {/*<OutreachPopup />*/}
 
           <Notifications />
 
