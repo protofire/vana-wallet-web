@@ -26,11 +26,7 @@ const History: NextPage = () => {
   return (
     <>
       <Head>
-<<<<<<< HEAD:src/pages/transactions/history.tsx
-        <title>Vana Safe – Transaction history</title>
-=======
         <title>{`${BRAND_NAME} – Transaction history`}</title>
->>>>>>> v1.51.3:apps/web/src/pages/transactions/history.tsx
       </Head>
 
       <TxHeader>
