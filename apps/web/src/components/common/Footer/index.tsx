@@ -1,14 +1,14 @@
-import type { ReactElement, ReactNode } from 'react'
+import type { ReactElement } from 'react'
 import { SvgIcon } from '@mui/material'
 import GitHubIcon from '@mui/icons-material/GitHub'
-import Link from 'next/link'
+//import Link from 'next/link'
 import { useRouter } from 'next/router'
 import css from './styles.module.css'
 import { AppRoutes } from '@/config/routes'
 import packageJson from '../../../../package.json'
 import ExternalLink from '../ExternalLink'
-import MUILink from '@mui/material/Link'
-import { HELP_CENTER_URL } from '@/config/constants'
+//import MUILink from '@mui/material/Link'
+//import { HELP_CENTER_URL } from '@/config/constants'
 import { useIsOfficialHost } from '@/hooks/useIsOfficialHost'
 
 const footerPages = [
@@ -21,15 +21,15 @@ const footerPages = [
   AppRoutes.licenses,
 ]
 
-const FooterLink = ({ children, href }: { children: ReactNode; href: string }): ReactElement => {
-  return href ? (
-    <Link href={href} passHref legacyBehavior>
-      <MUILink>{children}</MUILink>
-    </Link>
-  ) : (
-    <MUILink>{children}</MUILink>
-  )
-}
+// const FooterLink = ({ children, href }: { children: ReactNode; href: string }): ReactElement => {
+//   return href ? (
+//     <Link href={href} passHref legacyBehavior>
+//       <MUILink>{children}</MUILink>
+//     </Link>
+//   ) : (
+//     <MUILink>{children}</MUILink>
+//   )
+// }
 
 const Footer = (): ReactElement | null => {
   const router = useRouter()
@@ -39,9 +39,9 @@ const Footer = (): ReactElement | null => {
     return null
   }
 
-  const getHref = (path: string): string => {
-    return router.pathname === path ? '' : path
-  }
+  // const getHref = (path: string): string => {
+  //   return router.pathname === path ? '' : path
+  // }
 
   return (
     <footer className={css.container}>

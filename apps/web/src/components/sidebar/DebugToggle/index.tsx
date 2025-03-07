@@ -1,13 +1,13 @@
 import { type ChangeEvent, type ReactElement } from 'react'
 import { Box, FormControlLabel, Switch } from '@mui/material'
 import useLocalStorage from '@/services/local-storage/useLocalStorage'
-import { useDarkMode } from '@/hooks/useDarkMode'
-import { useAppDispatch } from '@/store'
+//import { useDarkMode } from '@/hooks/useDarkMode'
+//import { useAppDispatch } from '@/store'
 import { LS_KEY } from '@/config/gateway'
 
 const DebugToggle = (): ReactElement => {
-  const dispatch = useAppDispatch()
-  const isDarkMode = useDarkMode()
+  //const dispatch = useAppDispatch()
+  //const isDarkMode = useDarkMode()
 
   const [isProdGateway = false, setIsProdGateway] = useLocalStorage<boolean>(LS_KEY)
 

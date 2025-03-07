@@ -8,14 +8,14 @@ import type { setDarkMode } from '@/store/settingsSlice'
 import { selectSettings, setCopyShortName } from '@/store/settingsSlice'
 import SettingsHeader from '@/components/settings/SettingsHeader'
 import { trackEvent, SETTINGS_EVENTS } from '@/services/analytics'
-import { useDarkMode } from '@/hooks/useDarkMode'
+//import { useDarkMode } from '@/hooks/useDarkMode'
 import ExternalLink from '@/components/common/ExternalLink'
 import { BRAND_NAME } from '@/config/constants'
 
 const Appearance: NextPage = () => {
   const dispatch = useAppDispatch()
   const settings = useAppSelector(selectSettings)
-  const isDarkMode = useDarkMode()
+  //const isDarkMode = useDarkMode()
 
   const handleToggle = (
     action: typeof setCopyShortName | typeof setDarkMode,
@@ -73,38 +73,6 @@ const Appearance: NextPage = () => {
                   label="Copy addresses with chain prefix"
                 />
               </FormGroup>
-            </Grid>
-          </Grid>
-
-          <Grid
-            container
-            spacing={3}
-            sx={{
-              alignItems: 'center',
-              marginTop: 2,
-            }}
-          >
-            <Grid item lg={4} xs={12}>
-              <Typography
-                variant="h4"
-                sx={{
-                  fontWeight: 'bold',
-                }}
-              >
-                Theme
-              </Typography>
-            </Grid>
-
-            <Grid item xs>
-              <FormControlLabel
-                control={
-                  <Switch
-                    checked={isDarkMode}
-                    onChange={handleToggle(setDarkMode, SETTINGS_EVENTS.APPEARANCE.DARK_MODE)}
-                  />
-                }
-                label="Dark mode"
-              />
             </Grid>
           </Grid>
         </Paper>
