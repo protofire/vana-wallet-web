@@ -7515,6 +7515,7 @@ __metadata:
     lint-staged: "npm:^15.2.10"
     msw: "npm:^2.7.0"
     prettier: "npm:^3.4.2"
+    react-markdown: "npm:9.0.1"
   languageName: unknown
   linkType: soft
 
