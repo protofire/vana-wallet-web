@@ -8,7 +8,7 @@ import { AppRoutes } from '@/config/routes'
 import packageJson from '../../../../package.json'
 import ExternalLink from '../ExternalLink'
 import MUILink from '@mui/material/Link'
-import { HELP_CENTER_URL } from '@/config/constants'
+import { DISCORD_URL, HELP_CENTER_URL, TWITTER_URL } from '@/config/constants'
 import { useIsOfficialHost } from '@/hooks/useIsOfficialHost'
 import ProtofireLogo from '@/public/images/protofire-logo.svg'
 
@@ -48,7 +48,17 @@ const Footer = (): ReactElement | null => {
     <footer className={css.container}>
       <ul>
         <li>
-          <Typography variant="caption">&copy;2022–{new Date().getFullYear()} Core Contributors GmbH</Typography>
+          <Typography variant="caption">This is a Safe &quot;{' Wallet '}&quot; Partner website</Typography>
+        </li>
+        <li>
+          <ExternalLink href={DISCORD_URL} noIcon sx={{ span: { textDecoration: 'underline' } }}>
+            Discord
+          </ExternalLink>
+        </li>
+        <li>
+          <ExternalLink href={TWITTER_URL} noIcon sx={{ span: { textDecoration: 'underline' } }}>
+            X
+          </ExternalLink>
         </li>
         <li>
           <FooterLink href={getHref(AppRoutes.terms)}>Terms</FooterLink>
