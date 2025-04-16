@@ -48,7 +48,7 @@ const Footer = (): ReactElement | null => {
     <footer className={css.container}>
       <ul>
         <li>
-          <Typography variant="caption">This is a Safe &quot;{' Wallet '}&quot; Partner website</Typography>
+          <Typography variant="caption">This is a Safe{'{Wallet}'} Partner website</Typography>
         </li>
         <li>
           <ExternalLink href={DISCORD_URL} noIcon sx={{ span: { textDecoration: 'underline' } }}>
