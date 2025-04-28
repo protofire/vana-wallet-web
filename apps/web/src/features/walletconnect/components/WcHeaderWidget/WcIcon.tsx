@@ -22,7 +22,7 @@ const WcIcon = ({ sessionCount, sessionIcon, isError, onClick }: WcIconProps): R
           variant={isError ? 'dot' : 'standard'}
           badgeContent={
             showIcon ? (
-              <SafeAppIconCard alt="Connected dApp icon" src={sessionIcon} width={18} height={18} />
+              <SafeAppIconCard alt="Connected dApp icon" src={sessionIcon} width={14} height={14} />
             ) : (
               sessionCount
             )
